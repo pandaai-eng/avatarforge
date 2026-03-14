@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+
+# Vercel
+.vercel
+
+# Build & cache
+*.tsbuildinfo
+.turbo
+dist/
+build/
+
+# Environment (never deploy secrets)
+.env
+.env.*
+!.env.example
+
+# Debug & logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Testing & coverage
+coverage/
+.nyc_output/
+
+# Optional: uncomment if you don't want lockfiles in repo (Vercel needs them for install)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
