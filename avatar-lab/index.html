@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AvatarForge PromptLab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">◎</div>
+        <div>
+          <h1>AvatarForge PromptLab</h1>
+          <p>AI avatar product builder + prompt generator</p>
+        </div>
+      </div>
+
+      <section class="panel compact">
+        <h2>Project Setup</h2>
+        <label>Brand / Product Name
+          <input id="brandName" value="AvatarForge" />
+        </label>
+        <label>Niche
+          <select id="niche">
+            <option>Creator Education</option>
+            <option>Beauty / Lifestyle</option>
+            <option>Crypto / Finance</option>
+            <option>Fitness / Coaching</option>
+            <option>Real Estate</option>
+            <option>Ecommerce</option>
+            <option>Agency / B2B</option>
+          </select>
+        </label>
+        <label>Avatar Persona
+          <input id="persona" value="Confident creator mentor" />
+        </label>
+        <label>Offer Goal
+          <select id="goal">
+            <option>Sell prompt pack</option>
+            <option>Sell done-with-you setup</option>
+            <option>Grow audience</option>
+            <option>Launch digital course</option>
+            <option>Generate leads</option>
+          </select>
+        </label>
+        <button id="generateAll">Generate System</button>
+      </section>
+
+      <section class="panel compact">
+        <h2>Prompt Controls</h2>
+        <label>Platform
+          <select id="platform">
+            <option>ChatGPT Image</option>
+            <option>Midjourney</option>
+            <option>Flux</option>
+            <option>Runway</option>
+            <option>Kling</option>
+            <option>HeyGen</option>
+          </select>
+        </label>
+        <label>Visual Style
+          <select id="style">
+            <option>Luxury cinematic</option>
+            <option>Clean editorial</option>
+            <option>UGC natural</option>
+            <option>Futuristic neon</option>
+            <option>Soft feminine brand</option>
+            <option>Authority business</option>
+          </select>
+        </label>
+        <label>Voice
+          <select id="voice">
+            <option>Warm confident</option>
+            <option>High-energy closer</option>
+            <option>Luxury feminine</option>
+            <option>Calm educator</option>
+            <option>Bold founder</option>
+          </select>
+        </label>
+        <label>CTA Style
+          <select id="cta">
+            <option>Direct sale</option>
+            <option>Lead magnet</option>
+            <option>DM keyword</option>
+            <option>Waitlist</option>
+          </select>
+        </label>
+      </section>
+    </aside>
+
+    <main class="main">
+      <section class="hero panel">
+        <div>
+          <p class="eyebrow">2-hour prototype</p>
+          <h2>Generate avatar prompts, scripts, offers, and product assets fast.</h2>
+          <p>This prototype creates a full avatar content system you can use yourself or package as a digital product.</p>
+        </div>
+        <div class="hero-actions">
+          <button id="downloadMarkdown">Export Markdown</button>
+          <button id="downloadJson" class="secondary">Export JSON</button>
+        </div>
+      </section>
+
+      <section class="grid two-up">
+        <article class="panel">
+          <div class="section-head">
+            <h3>Avatar Identity Bible</h3>
+            <button data-copy="avatarBible">Copy</button>
+          </div>
+          <textarea id="avatarBible"></textarea>
+        </article>
+
+        <article class="panel">
+          <div class="section-head">
+            <h3>Master Image Prompt</h3>
+            <button data-copy="imagePrompt">Copy</button>
+          </div>
+          <textarea id="imagePrompt"></textarea>
+        </article>
+      </section>
+
+      <section class="grid two-up">
+        <article class="panel">
+          <div class="section-head">
+            <h3>Video / Talking Avatar Prompt</h3>
+            <button data-copy="videoPrompt">Copy</button>
+          </div>
+          <textarea id="videoPrompt"></textarea>
+        </article>
+
+        <article class="panel">
+          <div class="section-head">
+            <h3>Voice + Script Prompt</h3>
+            <button data-copy="voicePrompt">Copy</button>
+          </div>
+          <textarea id="voicePrompt"></textarea>
+        </article>
+      </section>
+
+      <section class="grid two-up">
+        <article class="panel">
+          <div class="section-head">
+            <h3>Offer Stack</h3>
+            <button data-copy="offerStack">Copy</button>
+          </div>
+          <textarea id="offerStack"></textarea>
+        </article>
+
+        <article class="panel">
+          <div class="section-head">
+            <h3>Content Calendar</h3>
+            <button data-copy="contentCalendar">Copy</button>
+          </div>
+          <textarea id="contentCalendar"></textarea>
+        </article>
+      </section>
+
+      <section class="grid two-up">
+        <article class="panel">
+          <div class="section-head">
+            <h3>Landing Page Copy</h3>
+            <button data-copy="landingCopy">Copy</button>
+          </div>
+          <textarea id="landingCopy"></textarea>
+        </article>
+
+        <article class="panel">
+          <div class="section-head">
+            <h3>Tool Stack</h3>
+            <button data-copy="toolStack">Copy</button>
+          </div>
+          <textarea id="toolStack"></textarea>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
